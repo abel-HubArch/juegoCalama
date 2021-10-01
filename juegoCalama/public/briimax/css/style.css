@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+html{
+scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+}
+.contenedor .header{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+.contenedor .header .titulo h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 7vw;
+
+text-shadow: -5.43732px 4.34985px 4.34985px rgba(255, 255, 255, 0.45);
+}
+.contenedor .header .caracteristicas{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+.contenedor .header .caracteristicas .img{
+  width: 50%;
+}
+.contenedor .header .caracteristicas .caracter{
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.contenedor .header .caracteristicas .caracter .opcion{
+    display: list-item;
+    text-align: left;
+}
+.contenedor .header .caracteristicas .caracter .opcion p{
+    font-weight: 600;
+    font-size: 4vw;
+    text-shadow: -3.12699px 2.50159px 2.50159px rgba(255, 255, 255, 0.45);
+}
+.contenedor .header .caracteristicas .caracter h1{
+    text-shadow: -4.00853px 3.20683px 3.20683px #C42E6F;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+.contenedor .header .caracteristicas .caracter button{
+    width: 219px;
+    height: 51px;
+    background: #C42E6F;
+    box-shadow: -9px 9px 4px rgba(196, 46, 111, 0.46);
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    transition-duration: 200ms;
+    text-decoration: none;
+    font-size: 21.7985px;
+    font-weight: 800;
+    text-shadow: -4.00853px 3.20683px 3.20683px #952254;
+    color: white;
+}
+
+.contenedor .header .caracteristicas .caracter button:focus{
+    box-shadow: -0px 0px 0px rgba(196, 46, 111, 0.46);
+    margin-left: -30px;
+}
+.contenedor .funciones .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenedor .funciones .titulo h1{
+    font-weight: 900;
+}
+.contenedor .funciones .textos{
+    background-image: url("../img/fondoFunciones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 30vh;
+    padding-top: 120px;
+    
+}
+.contenedor .funciones .textos h1{
+    color: white;
+    font-weight: 800;
+    text-shadow: -4.53072px 3.62457px 3.62457px #C42E6F;
+    font-size: 7vw;
+}
+.contenedor .funciones .textos h2{
+    color: #FFFFFF;
+    text-shadow: -4.2564px 3.40512px 3.40512px rgba(255, 255, 255, 0.45);
+}
+
+.contenedor .funciones .text{
+    margin-top: -20px;
+  background-color: black;
+    text-align: center;
+    height: 40vh;
+    padding: 120px 20px 0px 20px;
+    
+}
+.contenedor .funciones .text h1{
+    color: white;
+    font-weight: 800;
+    text-shadow: -4.53072px 3.62457px 3.62457px #C42E6F;
+    font-size: 7vw;
+}
+.contenedor .funciones .text h2{
+    color: #FFFFFF;
+    text-shadow: -4.2564px 3.40512px 3.40512px rgba(255, 255, 255, 0.45);
+}
+
+.contenedor .funciones .text button{
+    width: 219px;
+    height: 51px;
+    background: #C42E6F;
+    box-shadow: -9px 9px 4px rgba(196, 46, 111, 0.46);
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    transition-duration: 200ms;
+    text-decoration: none;
+    font-size: 21.7985px;
+    font-weight: 800;
+    text-shadow: -4.00853px 3.20683px 3.20683px #952254;
+    color: white;
+}
+
+.contenedor .funciones .text button:focus{
+    box-shadow: -0px 0px 0px rgba(196, 46, 111, 0.46);
+    margin-left: -30px;
+}
+
+
+.contenedor .envios{
+    margin: auto;
+    text-align: center;
+}
+.contenedor .envios h1{
+    font-weight: 800;
+    font-size: 20,04px;
+}
+.contenedor .mentira{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+.contenedor .mentira p{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 4vw;
+    text-shadow: 0px 1.50782px 0.502606px rgba(255, 255, 255, 0.45);
+}
+.contenedor .cotiza{
+    text-align: center;
+}
+.contenedor .cotiza h1{
+    font-weight: 800;
+    color: #000000;
+
+text-shadow: -7.62789px 6.10231px 6.10231px rgba(0, 0, 0, 0.45);
+}
+.contenedor .cotizador{
+    width: 100%;
+    height: 130vh;
+    background-color: black;
+}
+.contenedor .cotizador .precio{
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    margin-bottom: 30px;
+}
+.contenedor .cotizador .precio hr{
+    width: 70%;
+}
+.contenedor .cotizador .precio p{
+    margin: 0px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: -4.53072px 3.62457px 3.62457px #C42E6F;
+}
+.contenedor .cotizador .precio h1{
+    font-size: 10vh;
+    margin: 0px;
+    color: #FFFFFF;
+    font-weight: 800;
+text-shadow: -12px 8px 13.5922px #C42E6F;
+text-align: center;
+}
+.contenedor .cotizador form{
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    background-color: #000000;
+}
+
+.contenedor .cotizador form h1{
+    font-size: 6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -4.59151px 3.67321px 3.67321px rgba(255, 255, 255, 0.45);
+}
+.contenedor .cotizador form label{
+    font-size: 25px;
+}
+.contenedor .cotizador form input{
+    width: 60px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 30px;
+}
+.contenedor .cotizador form .tallas{
+    display: flex;
+    justify-content: center;
+}
+.contenedor .cotizador form .tallas .talla{
+    margin: 10px 10px 30px;
+}
+.contenedor .cotizador form .departamento select{
+    width: 70%;
+    height: 50px;
+    
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9vw;
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.contenedor .cotizador form .departamento label{
+    margin-top: 30px;
+    font-size: 7vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -4.59151px 3.67321px 3.67321px rgba(255, 255, 255, 0.45);
+}
+.contenedor .cotizador form h2{
+     font-size: 6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -4.59151px 3.67321px 3.67321px rgba(255, 255, 255, 0.45);
+
+}
+@media (max-width: 356px){
+    .contenedor .header{
+        height: 100vh;
+    }
+    .contenedor .header .caracteristicas .caracter{
+        text-align: left;
+        width: 40%;
+    }
+    .contenedor .header .caracteristicas .caracter .opcion p{
+        font-size: 12px;
+  }
+    .contenedor .header .caracteristicas .caracter button{
+        width: 150px;
+        height: 51px;
+        font-size: 15px;
+    }
+    .contenedor .header .caracteristicas .img #img{
+        margin-top: 10%;
+        width: 100%;
+      }
+      .contenedor .envios #imgMaps{
+    width: 100%;
+    }
+    .contenedor .cotizador form input{
+        width: 30px;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        font-size: 20px;
+    }
+    .contenedor .cotizador{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+
+}
+@media (max-height: 611px){
+    .contenedor .header{
+        height: 138vh;
+    }
+    .contenedor .funciones .textos{
+        height: 40vh;
+        padding-top: 20px;
+        height: 40vh;
+        
+    }
+    .contenedor .funciones .text{
+        margin-top: -10px;
+        height: 40vh;
+        padding-top: 50px;
+    }
+    .contenedor .funciones .textos h2{
+        font-size: 7vw;
+    }
+    .contenedor .funciones .text h2{
+        font-size: 7vw;
+    }
+    .contenedor .funciones .text button{
+        width: 80%;
+        height: 51px;
+        font-size: 7vw;
+   
+    }
+    
+    .contenedor .funciones .text button:focus{
+        box-shadow: -0px 0px 0px rgba(196, 46, 111, 0.46);
+        margin-left: -20px;
+    }
+    .contenedor .cotizador{
+        width: 100%;
+        height: 120vh;
+        background-color: black;
+    }
+}
+@media (max-width: 360px){
+    .contenedor .funciones .text{
+        margin-top: -10px;
+        height: 50vh;
+        padding-top: 50px;
+    }
+    .contenedor .funciones .textos{
+        margin-top: -10px;
+        height: 40vh;
+        padding-top: 50px;
+        
+    }
+    .contenedor .header{
+        height: 130vh;
+    }
+}
+
+@media (min-width: 498px){
+    .contenedor .header{
+        height: 155vh;
+    }
+    .contenedor .cotizador form .departamento select{
+
+        font-size: 20px;
+
+    }
+}
+@media (min-width: 718px){
+  
+    .contenedor{
+        width: 718px;
+        margin: auto; 
+        
+    }
+}
+@media (min-width: 724px){
+    html{
+        
+    }
+    .contenedor .header .titulo{
+        margin: auto;
+       
+    }
+    .contenedor .header .titulo h1{
+        font-size: 40px;
+   }
+    .contenedor .header .caracteristicas .caracter .opcion p{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .contenedor .funciones .textos h1{
+          font-size: 40px;
+    }
+    .contenedor .funciones .textos h2{
+          font-size: 20px;
+    }
+    .contenedor .funciones .text h1{
+        font-size: 40px;
+  }
+  .contenedor .funciones .text h2{
+        font-size: 20px;
+  }
+
+.contenedor .mentira p{
+    font-size: 20px;
+  }
+  .contenedor .cotizador form h1{
+    font-size: 30px;
+   }
+   .contenedor .cotizador form .departamento label{
+    font-size: 30px;
+}
+.contenedor .cotizador form h2{
+    font-size: 30px;
+  
+}
+}
+
