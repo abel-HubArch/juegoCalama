@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Juego del calamar Overol</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <div class="titulo">
+                <h1>Overol <br> El Juego del calamar</h1>
+            </div>
+            <div class="caracteristicas">
+                <div class="caracter">
+                    <h1>Caracteristicas</h1>
+                    <div class="opcion"><p>Tallas a Eleccion</p></div>
+                    <div class="opcion"><p>Bolsillos Amplios</p></div>
+                    <div class="opcion"><p>Bolsillo Especial Anti Agua</p></div>
+                    <div class="opcion"><p>Tela Industrial <br> (No telas de naiylon que se rompen facilmente)</p></div>
+                    <div class="opcion"><p>Color Original</p></div>
+                    <div class="opcion"><p>Costura Resistente</p></div>
+                    <div class="opcion"><p>Cinturon Negro</p></div>
+                    <h1>NO INCLUYE MASCARA</h1>
+                    <a href="#compra"><button>Hacer Pedido</button></a>
+                </div> <br>
+                <div class="img">
+                    <img id="img" src="img/overol.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="funciones">
+            <div class="titulo">
+                <h1  class="wow animate__animated animate__fadeInDown"> PARA CARNAVAL</h1>
+            </div>
+            <div class="textos" >
+                <h1>BOLSILLO ANTI AGUA</h1> 
+                <h2 class="wow animate__animated animate__fadeInDown">El overol incluye un bolsillo anti agua con  oculto en la parte de adentro</h2>
+            </div>
+            <div class="text">
+                <h1>TALLAS A TU ELECCION</h1> 
+                <h2 class="wow animate__animated animate__fadeInDown">Escoja las tallas que requiere y las unidades que desea</h2>
+                <a href="#compra"><button>Hacer Pedido</button></a>
+            </div>
+            <div class="text">
+                <h1>BORDADOS PERSONALIZADOS</h1> 
+                <h2 class="wow animate__animated animate__fadeInDown">Aumentando 8Bs agregamos el logo bordado de su institucion, curso, o grupo de amigos en la espanlda y el pecho</h2>
+                <input type="checkbox" name="" id="">
+            </div>
+        </div>
+        <div class="envios">
+            <h1>ENVIOS A TODA BOLIVIA</h1>
+            <img id="imgMaps" class="wow animate__animated animate__fadeInUp" src="img/mapas.png" alt="" style="">
+        </div>
+        
+        <div class="mentira">
+            <p class="wow animate__animated animate__fadeIn">no se deje engañar con personas que nunca hicieron un overol, somos confeccionistas especialistas en overoles industriales por lo cual garantizamos una prenda de calidad</p>
+        </div>
+        <div class="cotiza">
+            <h1 class="wow animate__animated animate__fadeInDown">COTIZA TU PEDIDO</h1>
+        </div>
+
+<a name="compra">
+        <!-- cotizador -->
+        <div class="cotizador" name="compra" id="compra">
+            <div class="precio">
+                <h1>120Bs</h1>
+                <p>Por unidad</p>
+                <hr>
+                
+                <h1>110Bs</h1>
+                <p>Por cuarta</p>
+                <hr>
+                
+                <h1>100Bs</h1>
+                <p>Por media docena</p>
+                <hr>
+                
+                <h1>90Bs</h1>
+                <p>Por docena</p>
+                <hr>
+                
+                <h1>85</h1>
+                <p>A partir de 2 docenas</p>
+                <hr>
+                
+            </div>
+            <form action="">
+                <h1>Selecciona las tallas que requiere</h1>
+                <div class="tallas">
+                    <div class="talla">
+                        <label for="xl">XL</label> <br>
+                        <input onkeydown="sumar()" onkeyup="sumar()" min="1" value="0" type="number" id="xl" name="xl">
+                    </div>
+                    <div class="talla">
+                        <label for="l">L</label> <br>
+                        <input onkeydown="sumar()" onkeyup="sumar()" min="1" value="0" type="number" id="l" name="l">
+                    </div>
+                    <div class="talla">
+                        <label for="m">M</label> <br>
+                        <input onkeydown="sumar()" onkeyup="sumar()" min="1" value="0" type="number" id="m" name="m">
+                    </div>
+                    <div class="talla">
+                        <label for="s">S</label> <br>
+                        <input onkeydown="sumar()" onkeyup="sumar()" min="1" value="0" type="number" id="s" name="s">
+                    </div>
+                </div>
+        
+                <div class="departamento">
+                    <label for="departamentoselect">Selecciona tu departamento</label>
+                    <select name="departamentoselect" id="departamentoselect">
+                        <option value="LA PAZ">La Paz</option>
+                        <option value="SANTA CRUZ">Santa Cruz</option>
+                        <option value="COCHABAMBA">Cochabamba</option>
+                        <option value="ORURO">Oruro</option>
+                        <option value="PANDO">Pando</option>
+                        <option value="CHUQUISACA">Chuquisaca</option>
+                        <option value="BENI">Beni</option>
+                        <option value="POTOSI">Potosi</option>
+                        <option value="TARIJA">Tarija</option>
+                    </select>
+                    
+                </div>
+                
+
+                <h2>Cantidad Total:</h2>
+              
+                    <h1 id="cantidadTotal"></h1>
+                <h2>Costo total:</h2>
+              
+                    <h1 id="costoTotal"></h1>
+      
+
+                <button type="submit" onclick="getData()">Hacer Compra</button>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+ 
+                    button{
+                        width: 60%;
+    height: 51px;
+    background: #C42E6F;
+    box-shadow: -9px 9px 4px rgba(196, 46, 111, 0.46);
+    border-radius: 16px;
+     width: 60%;
+    height: 51px;
+    background: #C42E6F;
+    box-shadow: -9px 9px 4px rgba(196, 46, 111, 0.46);
+    border-radius: 16px;
+    border: none;
+    margin-top: 30px;
+    transition-duration: 200ms;
+    text-decoration: none;
+    font-size: 17.7985px;
+    font-weight: 800;
+    text-shadow: -4.00853px 3.20683px 3.20683px #952254;
+    color: white;
+    text-transform: uppercase;
+                    }
+                    button:focus{
+                        box-shadow: -0px 0px 0px rgba(196, 46, 111, 0.46);
+    margin-left: -30px;
+                    }
+                </style>
+            </form>
+        </div>
+    </a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>
